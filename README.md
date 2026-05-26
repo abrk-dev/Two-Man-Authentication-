@@ -12,6 +12,7 @@ Built entirely in **bare-metal AVR C** (bypassing standard Arduino libraries), t
 * **Logic:** Strict sequential FSM with 15-second hardware timeouts
 
 Base Diagram
+
 <img width="880" height="440" alt="Base-Design" src="https://github.com/user-attachments/assets/d1f13805-fbb9-4863-bf9d-8001f62fc40c" />
 
 
