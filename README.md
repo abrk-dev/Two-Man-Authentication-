@@ -16,28 +16,41 @@ Base Diagram
 <img width="880" height="440" alt="Base-Design" src="https://github.com/user-attachments/assets/d1f13805-fbb9-4863-bf9d-8001f62fc40c" />
 
 
+
 System Locked (Default State)
+
 <img width="931" height="473" alt="System-Locked" src="https://github.com/user-attachments/assets/5b9164f0-8ba5-4171-96b9-3a3a77182e06" />
 
 
+
 Guard 1 is prompted to enter the keypad pin
+
 <img width="938" height="479" alt="Guard-1-Input-via-Keypad" src="https://github.com/user-attachments/assets/ea48f367-0dcb-4f7a-803f-fc7f554eb22c" />
 
 
+
 Guard 2 is prompted to enter the dial pin
+
 <img width="946" height="471" alt="Guard-2-Input-via-Dial" src="https://github.com/user-attachments/assets/3a450b61-858c-4c26-a9b3-66e332268245" />
 
 
+
 Rack is unlocked after both guards entered correct pins
+
 <img width="923" height="474" alt="Rack-Unlocked" src="https://github.com/user-attachments/assets/4f0f7d9f-dade-4578-825d-8765851b5847" />
 
 
+
 Security breach warning after a guard entered the wrong pin
+
 <img width="941" height="456" alt="Security-Breach" src="https://github.com/user-attachments/assets/594c2e2d-4b61-4d7c-be8a-e8a13edd1ed0" />
 
 
+
 Pin was not entered within 15 second time limit
+
 <img width="939" height="486" alt="Timeout" src="https://github.com/user-attachments/assets/14b9ec2b-75df-4c30-84fe-e2b246e401b6" />
+
 
 
 Video demo showcasing how it works:
