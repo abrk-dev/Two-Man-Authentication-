@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-mega", "id": "mega", "top": 135, "left": -224.4, "attrs": {} },
+    { "type": "wokwi-membrane-keypad", "id": "keypad1", "top": -242, "left": 533.6, "attrs": {} },
+    { "type": "wokwi-ky-040", "id": "encoder1", "top": -171.1, "left": -519.2, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": -136.4, "left": -249.6, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -55.2,
+      "left": -382.2,
+      "attrs": { "volume": "0.1" }
+    },
+    { "type": "wokwi-lcd1602", "id": "lcd2", "top": -217.37, "left": 198.4, "attrs": {} }
+  ],
+  "connections": [
+    [ "mega:37", "keypad1:R1", "purple", [ "v1.3", "h141.4", "v0", "h19.2" ] ],
+    [ "mega:36", "keypad1:R2", "purple", [ "v1.3", "h170.6" ] ],
+    [ "mega:35", "keypad1:R3", "purple", [ "v1.2", "h179.8" ] ],
+    [ "mega:34", "keypad1:R4", "purple", [ "v1.2", "h189.8" ] ],
+    [ "mega:33", "keypad1:C1", "orange", [ "v1.1", "h189.4" ] ],
+    [ "mega:32", "keypad1:C2", "orange", [ "v1.1", "h209" ] ],
+    [ "mega:31", "keypad1:C3", "orange", [ "v1", "h208.6" ] ],
+    [ "mega:30", "keypad1:C4", "orange", [ "v1", "h228.2" ] ],
+    [ "lcd2:RS", "mega:22", "cyan", [ "v0" ] ],
+    [ "mega:23", "lcd2:E", "cyan", [ "v1.1", "h112.6" ] ],
+    [ "mega:24", "lcd2:D4", "blue", [ "v0.95", "h141.8" ] ],
+    [ "mega:25", "lcd2:D5", "blue", [ "v0.95", "h179.8" ] ],
+    [ "mega:26", "lcd2:D6", "blue", [ "v1.05", "h189.8" ] ],
+    [ "mega:27", "lcd2:D7", "blue", [ "v1.05", "h199" ] ],
+    [ "mega:21", "encoder1:CLK", "yellow", [ "v0" ] ],
+    [ "encoder1:DT", "mega:20", "yellow", [ "h0" ] ],
+    [ "bz1:2", "mega:5", "white", [ "v115.2", "h134" ] ],
+    [ "servo1:V+", "mega:5V", "red", [ "h-48", "v316.9", "h38.4" ] ],
+    [ "servo1:PWM", "mega:11", "green", [ "h-38.4", "v192.2", "h134.4" ] ],
+    [ "servo1:GND", "mega:GND.5", "black", [ "h-57.6", "v422.4", "h480", "v9.6" ] ],
+    [ "bz1:1", "mega:GND.5", "black", [ "v316.8", "h537.6", "v-38.4", "h-9.6" ] ],
+    [ "encoder1:VCC", "mega:5V", "red", [ "h19.2", "v490", "h316.8" ] ],
+    [ "encoder1:GND", "mega:GND.5", "black", [ "h9.6", "v480.8", "h585.6", "v-48" ] ],
+    [ "lcd2:VDD", "mega:5V", "red", [ "v480", "h-19.1" ] ],
+    [ "lcd2:A", "mega:5V", "red", [ "v489.6", "h-422.5" ] ],
+    [ "lcd2:VSS", "mega:GND.5", "black", [ "v0" ] ],
+    [ "lcd2:RW", "mega:GND.4", "black", [ "v0" ] ],
+    [ "lcd2:K", "mega:GND.4", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
